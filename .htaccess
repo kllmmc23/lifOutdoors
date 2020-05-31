@@ -1,7 +1,4 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^lif.melliott\.io [NC]
-RewriteRule ^(.*)$ http://lif.melliott.io/ [L,R=301,NC]
-RewriteEngine on
 RewriteCond %{HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 <IfModule mod_headers.c>
